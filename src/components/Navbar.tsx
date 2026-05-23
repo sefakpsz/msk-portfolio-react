@@ -1,5 +1,6 @@
 import type { FC } from "react";
 import { NAV_ITEMS, type NavItem } from "../data";
+import ThemeToggle from "./ThemeToggle";
 
 interface NavbarProps {
   active: NavItem;
@@ -20,9 +21,9 @@ const Navbar: FC<NavbarProps> = ({ active, scrolled, onNav }) => (
       display: "flex",
       alignItems: "center",
       justifyContent: "space-between",
-      background: scrolled ? "rgba(11,12,15,0.85)" : "transparent",
+      background: scrolled ? "var(--bg-secondary)" : "transparent",
       backdropFilter: scrolled ? "blur(16px)" : "none",
-      borderBottom: scrolled ? "1px solid rgba(255,255,255,0.05)" : "none",
+      borderBottom: scrolled ? "1px solid var(--border-color)" : "none",
       transition: "all 0.3s ease",
     }}
   >
@@ -32,7 +33,7 @@ const Navbar: FC<NavbarProps> = ({ active, scrolled, onNav }) => (
         fontWeight: 800,
         fontSize: 15,
         letterSpacing: "0.04em",
-        color: "#E8FF47",
+        color: "#BD00FF",
         cursor: "pointer",
       }}
       onClick={() => onNav("About")}
@@ -40,23 +41,29 @@ const Navbar: FC<NavbarProps> = ({ active, scrolled, onNav }) => (
       MSK
     </div>
 
-    <div style={{ display: "flex", gap: 32, alignItems: "center" }}>
-      {NAV_ITEMS.map((n) => (
-        <span
-          key={n}
-          className="nav-link"
-          onClick={() => onNav(n)}
-          style={{
-            fontSize: 13,
-            fontFamily: "'DM Mono', monospace",
-            color: active === n ? "#E8FF47" : "rgba(255,255,255,0.5)",
-            letterSpacing: "0.04em",
-            cursor: "pointer",
-          }}
-        >
-          {n}
-        </span>
-      ))}
+    <div style={{ display: "flex", alignItems: "center", gap: 32 }}>
+      <div 
+        className="nav-container"
+        style={{ display: "flex", gap: 32, alignItems: "center", maxWidth: "calc(100vw - 180px)" }}
+      >
+        {NAV_ITEMS.map((n) => (
+          <span
+            key={n}
+            className="nav-link"
+            onClick={() => onNav(n)}
+            style={{
+              fontSize: 13,
+              fontFamily: "'DM Mono', monospace",
+              color: active === n ? "#BD00FF" : "var(--text-dim)",
+              letterSpacing: "0.04em",
+              cursor: "pointer",
+            }}
+          >
+            {n}
+          </span>
+        ))}
+      </div>
+      <ThemeToggle />
     </div>
   </nav>
 );

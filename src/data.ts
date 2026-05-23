@@ -10,7 +10,7 @@ export const data: PortfolioData = {
   linkedin: "https://linkedin.com/in/sefakpsz",
   medium: "https://medium.com/@sefakpsz",
   profile:
-    "Results-driven Backend Engineer and Team Lead with 3+ years of professional experience designing and delivering scalable, cloud-native systems in fintech and SaaS environments. Proven expertise in C#, .NET, and Node.js, with hands-on production experience across PostgreSQL, MongoDB, Redis, and RabbitMQ. Passionate about clean architecture, system performance, and delivering reliable software at scale.",
+    "Results-driven Backend Engineer and Team Lead with 4+ years of professional experience designing and delivering scalable, cloud-native systems in fintech and SaaS environments. Proven expertise in C#, .NET, and Node.js, with hands-on production experience across PostgreSQL, MongoDB, Redis, and RabbitMQ. Passionate about clean architecture, system performance, and delivering reliable software at scale.",
   skills: [
     { category: "Languages", items: ["C#", "TypeScript", "JavaScript"] },
     {
@@ -35,7 +35,14 @@ export const data: PortfolioData = {
     },
     {
       category: "Cloud & DevOps",
-      items: ["AWS (S3, EC2, RDS, SES)", "Docker", "Nginx", "GitHub Actions", "Hetzner", "Ubuntu"],
+      items: [
+        "AWS (S3, EC2, RDS, SES)",
+        "Docker",
+        "Nginx",
+        "GitHub Actions",
+        "Hetzner",
+        "Ubuntu",
+      ],
     },
     {
       category: "Real-time & APIs",
@@ -70,7 +77,16 @@ export const data: PortfolioData = {
         "Developed image processing service using Magick.NET and SkiaSharp",
         "Implemented secure refresh-token system and Redis caching across tenants",
       ],
-      stack: [".NET", "PostgreSQL", "RabbitMQ", "SignalR", "Docker", "Hetzner", "Redis", "Autofac"],
+      stack: [
+        ".NET",
+        "PostgreSQL",
+        "RabbitMQ",
+        "SignalR",
+        "Docker",
+        "Hetzner",
+        "Redis",
+        "Autofac",
+      ],
     },
     {
       role: "Backend & DevOps Engineer",
@@ -84,7 +100,14 @@ export const data: PortfolioData = {
         "Built large-scale Socket.IO system bridging main platform, frontend, and support services",
         "Liaised with AWS Support for service limit increases and SES production access",
       ],
-      stack: ["Node.js", "Socket.IO", "AWS", "Docker", "Nginx", "GitHub Actions"],
+      stack: [
+        "Node.js",
+        "Socket.IO",
+        "AWS",
+        "Docker",
+        "Nginx",
+        "GitHub Actions",
+      ],
     },
     {
       role: "Backend Engineer",
@@ -101,7 +124,17 @@ export const data: PortfolioData = {
         "Developed CRM system and live support with Socket.IO",
         "Implemented blockchain infrastructure for BTC, NEAR, DOGE with Node.js",
       ],
-      stack: [".NET", "PostgreSQL", "MSSQL", "Redis", "gRPC", "MediatR", "Ocelot", "MongoDB", "SignalR"],
+      stack: [
+        ".NET",
+        "PostgreSQL",
+        "MSSQL",
+        "Redis",
+        "gRPC",
+        "MediatR",
+        "Ocelot",
+        "MongoDB",
+        "SignalR",
+      ],
     },
     {
       role: "Backend & DevOps Engineer",
@@ -114,7 +147,13 @@ export const data: PortfolioData = {
         "Managed data layer with Prisma ORM on PostgreSQL",
         "Integrated Google Cloud Storage for image uploads",
       ],
-      stack: ["Node.js", "Fastify.js", "Prisma", "PostgreSQL", "Google Cloud Storage"],
+      stack: [
+        "Node.js",
+        "Fastify.js",
+        "Prisma",
+        "PostgreSQL",
+        "Google Cloud Storage",
+      ],
     },
     {
       role: "Backend Intern",
@@ -139,11 +178,17 @@ export const data: PortfolioData = {
   languages: ["Turkish (Native)", "English (Fluent)"],
 };
 
-export const NAV_ITEMS = ["About", "Skills", "Experience", "Education", "Contact"] as const;
+export const NAV_ITEMS = [
+  "About",
+  "Skills",
+  "Experience",
+  "Education",
+  "Contact",
+] as const;
 export type NavItem = (typeof NAV_ITEMS)[number];
 
 export const STATS: Array<{ num: string; label: string }> = [
-  { num: "3+", label: "Years experience" },
+  { num: "4+", label: "Years experience" },
   { num: "5", label: "Companies" },
   { num: "28+", label: "Technologies" },
   { num: "2", label: "Languages" },

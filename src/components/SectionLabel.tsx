@@ -17,7 +17,7 @@ const SectionLabel: FC<SectionLabelProps> = ({ children }) => (
       style={{
         fontSize: 11,
         letterSpacing: "0.18em",
-        color: "#E8FF47",
+        color: "#BD00FF",
         textTransform: "uppercase",
         fontFamily: "'DM Mono', monospace",
         whiteSpace: "nowrap",

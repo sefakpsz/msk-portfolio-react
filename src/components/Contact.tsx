@@ -24,15 +24,16 @@ const Contact: FC = () => (
           lineHeight: 1.1,
           marginBottom: 20,
           letterSpacing: "-0.02em",
+          color: "var(--text-primary)",
         }}
       >
         Let's build something{" "}
-        <span style={{ color: "#E8FF47" }}>great</span> together.
+        <span style={{ color: "#BD00FF" }}>great</span> together.
       </h2>
       <p
         style={{
           fontSize: 15,
-          color: "rgba(255,255,255,0.5)",
+          color: "var(--text-dim)",
           marginBottom: 40,
           lineHeight: 1.7,
         }}
@@ -54,18 +55,18 @@ const Contact: FC = () => (
               justifyContent: "space-between",
               alignItems: "center",
               padding: "16px 20px",
-              border: "1px solid rgba(255,255,255,0.07)",
+              border: "1px solid var(--border-color)",
               borderRadius: 6,
               textDecoration: "none",
-              color: "rgba(255,255,255,0.65)",
-              background: "rgba(255,255,255,0.02)",
+              color: "var(--text-secondary)",
+              background: "var(--bg-card)",
             }}
           >
             <span
               style={{
                 fontSize: 11,
                 fontFamily: "'DM Mono', monospace",
-                color: "#E8FF47",
+                color: "#BD00FF",
                 letterSpacing: "0.1em",
               }}
             >

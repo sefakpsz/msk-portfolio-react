@@ -9,10 +9,10 @@ const Education: FC = () => (
 
     <div
       style={{
-        border: "1px solid rgba(255,255,255,0.07)",
+        border: "1px solid var(--border-color)",
         borderRadius: 8,
         padding: "32px",
-        background: "rgba(255,255,255,0.015)",
+        background: "var(--bg-card)",
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
@@ -27,14 +27,15 @@ const Education: FC = () => (
             fontWeight: 700,
             fontSize: 22,
             marginBottom: 6,
+            color: "var(--text-primary)",
           }}
         >
           {data.education.degree}
         </div>
-        <div style={{ fontSize: 15, color: "#E8FF47", marginBottom: 4 }}>
+        <div style={{ fontSize: 15, color: "#BD00FF", marginBottom: 4 }}>
           {data.education.school}
         </div>
-        <div style={{ fontSize: 13, color: "rgba(255,255,255,0.4)" }}>
+        <div style={{ fontSize: 13, color: "var(--text-dim)" }}>
           {data.education.location}
         </div>
       </div>
@@ -42,7 +43,7 @@ const Education: FC = () => (
         style={{
           fontFamily: "'DM Mono', monospace",
           fontSize: 13,
-          color: "rgba(255,255,255,0.35)",
+          color: "var(--text-dim)",
         }}
       >
         {data.education.period}
@@ -54,7 +55,7 @@ const Education: FC = () => (
         style={{
           fontSize: 11,
           fontFamily: "'DM Mono', monospace",
-          color: "#E8FF47",
+          color: "#BD00FF",
           letterSpacing: "0.14em",
           textTransform: "uppercase",
           marginBottom: 16,
@@ -68,10 +69,10 @@ const Education: FC = () => (
             key={i}
             style={{
               padding: "10px 20px",
-              border: "1px solid rgba(255,255,255,0.1)",
+              border: "1px solid var(--border-color)",
               borderRadius: 6,
               fontSize: 14,
-              color: "rgba(255,255,255,0.7)",
+              color: "var(--text-secondary)",
             }}
           >
             {lang}

@@ -17,17 +17,17 @@ const Skills: FC = () => (
         <div
           key={i}
           style={{
-            border: "1px solid rgba(255,255,255,0.07)",
+            border: "1px solid var(--border-color)",
             borderRadius: 8,
             padding: "24px 24px 20px",
-            background: "rgba(255,255,255,0.02)",
+            background: "var(--bg-card)",
           }}
         >
           <div
             style={{
               fontSize: 11,
               fontFamily: "'DM Mono', monospace",
-              color: "#E8FF47",
+              color: "#BD00FF",
               letterSpacing: "0.14em",
               textTransform: "uppercase",
               marginBottom: 16,
@@ -44,9 +44,9 @@ const Skills: FC = () => (
                   fontSize: 12,
                   padding: "5px 11px",
                   borderRadius: 4,
-                  background: "rgba(255,255,255,0.05)",
-                  border: "1px solid rgba(255,255,255,0.08)",
-                  color: "rgba(255,255,255,0.75)",
+                  background: "var(--bg-card)",
+                  border: "1px solid var(--border-color)",
+                  color: "var(--text-secondary)",
                   cursor: "default",
                 }}
               >

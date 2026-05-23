@@ -13,10 +13,10 @@ const Experience: FC = () => (
           key={i}
           className="exp-card"
           style={{
-            border: "1px solid rgba(255,255,255,0.07)",
+            border: "1px solid var(--border-color)",
             borderRadius: 8,
             padding: "28px 28px 24px",
-            background: "rgba(255,255,255,0.015)",
+            background: "var(--bg-card)",
           }}
         >
           <div
@@ -35,14 +35,14 @@ const Experience: FC = () => (
                   fontFamily: "'Syne', sans-serif",
                   fontWeight: 700,
                   fontSize: 18,
-                  color: "#F0F0EC",
+                  color: "var(--text-primary)",
                   marginBottom: 4,
                 }}
               >
                 {exp.role}
               </div>
-              <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)" }}>
-                <span style={{ color: "#E8FF47", fontWeight: 500 }}>{exp.company}</span>
+              <div style={{ fontSize: 14, color: "var(--text-dim)" }}>
+                <span style={{ color: "#BD00FF", fontWeight: 500 }}>{exp.company}</span>
                 {" · "}
                 {exp.domain}
                 {" · "}
@@ -53,7 +53,7 @@ const Experience: FC = () => (
               style={{
                 fontSize: 12,
                 fontFamily: "'DM Mono', monospace",
-                color: "rgba(255,255,255,0.35)",
+                color: "var(--text-dim)",
                 whiteSpace: "nowrap",
                 paddingTop: 2,
               }}
@@ -68,7 +68,7 @@ const Experience: FC = () => (
                 key={j}
                 style={{
                   fontSize: 13.5,
-                  color: "rgba(255,255,255,0.6)",
+                  color: "var(--text-secondary)",
                   lineHeight: 1.65,
                   paddingLeft: 16,
                   marginBottom: 5,
@@ -83,7 +83,7 @@ const Experience: FC = () => (
                     width: 4,
                     height: 4,
                     borderRadius: "50%",
-                    background: "#E8FF47",
+                    background: "#BD00FF",
                     opacity: 0.5,
                   }}
                 />
