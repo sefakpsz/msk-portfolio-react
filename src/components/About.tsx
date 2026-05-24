@@ -9,7 +9,11 @@ interface AboutProps {
 const About: FC<AboutProps> = ({ onContact }) => (
   <Section
     id="About"
-    style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}
+    style={{
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center",
+    }}
   >
     <div className="fade-up" style={{ animationDelay: "0s" }}>
       <div
@@ -54,7 +58,7 @@ const About: FC<AboutProps> = ({ onContact }) => (
           letterSpacing: "0.02em",
         }}
       >
-        Backend Engineer & Team Lead — Istanbul, Turkey
+        Backend Engineer — Istanbul, Turkey
       </div>
     </div>
 
@@ -74,7 +78,12 @@ const About: FC<AboutProps> = ({ onContact }) => (
 
     <div
       className="fade-up"
-      style={{ animationDelay: "0.4s", display: "flex", gap: 16, flexWrap: "wrap" }}
+      style={{
+        animationDelay: "0.4s",
+        display: "flex",
+        gap: 16,
+        flexWrap: "wrap",
+      }}
     >
       <button
         onClick={onContact}

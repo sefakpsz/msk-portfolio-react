@@ -6,7 +6,11 @@ import type { ContactLink } from "../types";
 
 const contactLinks: ContactLink[] = [
   { label: "Email", value: data.email, href: `mailto:${data.email}` },
-  { label: "Phone", value: data.phone, href: `tel:${data.phone.replace(/\s/g, "")}` },
+  {
+    label: "Phone",
+    value: data.phone,
+    href: `tel:${data.phone.replace(/\s/g, "")}`,
+  },
   { label: "GitHub", value: "github.com/sefakpsz", href: data.github },
   { label: "LinkedIn", value: "linkedin.com/in/sefakpsz", href: data.linkedin },
   { label: "Medium", value: "medium.com/@sefakpsz", href: data.medium },
@@ -27,8 +31,8 @@ const Contact: FC = () => (
           color: "var(--text-primary)",
         }}
       >
-        Let's build something{" "}
-        <span style={{ color: "#BD00FF" }}>great</span> together.
+        Let's build something <span style={{ color: "#BD00FF" }}>great</span>{" "}
+        together.
       </h2>
       <p
         style={{
@@ -38,8 +42,8 @@ const Contact: FC = () => (
           lineHeight: 1.7,
         }}
       >
-        Open to backend engineering and team lead roles. Feel free to reach out via email or
-        connect on LinkedIn.
+        Open to backend engineering and team lead roles. Feel free to reach out
+        via email or connect on LinkedIn.
       </p>
 
       <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
