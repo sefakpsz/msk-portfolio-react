@@ -43,7 +43,7 @@ const GlobalStyles: FC = () => {
 
       *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
       body { background: var(--bg-main); color: var(--text-primary); transition: background 0.4s ease, color 0.4s ease; }
-      html { scroll-behavior: smooth; }
+      html { scroll-behavior: smooth; scrollbar-gutter: stable; }
       ::-webkit-scrollbar { width: 4px; }
       ::-webkit-scrollbar-track { background: var(--bg-main); }
       ::-webkit-scrollbar-thumb { background: var(--accent-color); border-radius: 2px; }

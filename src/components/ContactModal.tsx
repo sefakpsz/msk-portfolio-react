@@ -24,12 +24,28 @@ const ContactModal: FC<ContactModalProps> = ({ isOpen, onClose }) => {
     }
   }, [isOpen, shouldRender]);
 
-  if (!shouldRender) return null;
-
   const handleClose = () => {
     setIsClosing(true);
     setTimeout(onClose, 250);
   };
+
+  useEffect(() => {
+    const handleEsc = (e: KeyboardEvent) => {
+      if (e.key === "Escape") handleClose();
+    };
+    if (isOpen) {
+      window.addEventListener("keydown", handleEsc);
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      window.removeEventListener("keydown", handleEsc);
+      document.body.style.overflow = "unset";
+    };
+  }, [isOpen]);
+
+  if (!shouldRender) return null;
 
   return (
     <div
