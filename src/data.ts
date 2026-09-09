@@ -67,7 +67,7 @@ export const data: PortfolioData = {
   ],
   experience: [
     {
-      role: "Backend Team Lead & DevOps Engineer",
+      role: "Senior Backend Engineer",
       company: "Reseed Software",
       domain: "Customs",
       period: "Dec 2023 – Apr 2026",
@@ -140,7 +140,7 @@ export const data: PortfolioData = {
       ],
     },
     {
-      role: "Backend Engineer",
+      role: "Mid Backend Engineer",
       company: "Prime Tech",
       domain: "Finance",
       period: "Aug 2022 – Jul 2024",

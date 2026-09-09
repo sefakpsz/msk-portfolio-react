@@ -58,7 +58,7 @@ const About: FC<AboutProps> = ({ onContact }) => (
           letterSpacing: "0.02em",
         }}
       >
-        Backend Engineer — Istanbul, Turkey
+        Senior Backend Engineer — Istanbul, Turkey
       </div>
     </div>
 
